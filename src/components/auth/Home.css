@@ -1,0 +1,15 @@
+.historia-container {
+    background-image: url('/path/to/your/image.jpg'); /* Reemplaza con la ruta a tu imagen */
+    background-size: cover;
+    padding: 60px;
+  }
+  
+  .historia-container h2, .historia-container h3 {
+    color: white;
+  }
+  
+  .historia-container p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+  }
