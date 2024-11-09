@@ -31,6 +31,29 @@ function App() {
       path: "/login",
       element: <Login />,
     },
+    {
+      path:"/nuevo-viaje",
+      element:( <UserProtected>
+        {<NewTrip />}
+      </UserProtected>
+      ),
+    },
+    {
+      path:"/historial-viajes",
+      element:( <UserProtected>
+      {<TravelHistory />}
+      </UserProtected>
+      ),
+    },
+    {
+      path:"/contacto",
+      element:( <UserProtected>
+      {<ContactUs />} 
+      </UserProtected>
+      ),
+    },
+    
+
   ]);
 
   return <RouterProvider router={router} />;
